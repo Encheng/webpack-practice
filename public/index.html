@@ -1,0 +1,31 @@
+<html>
+	<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+	<script src="assets/js/bundle.js"></script>
+	<head>
+    	<title>測試</title>
+  	</head>
+	<body>
+		<div>
+			Hello
+		</div>
+		<div id="hello2">
+			Hello2
+		</div>
+		<div id="app">
+			<div class="message">
+				{{ message }}
+			</div>
+		</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		jQuery("#hello2").hide();
+	});
+	new Vue({
+        el: '#app',
+        data: {
+            message: "Hello Vue"
+        }
+    })
+</script>
+</html>
